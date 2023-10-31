@@ -25,7 +25,7 @@ where `<formula>` is one of the following Homebrew formulas published by Stacklo
 
 | Repository | Formula | Description |
 | ---------- | ------- | ----------- |
-| [medic](https://github.com/stacklok/mediator)                    | [formula](Formula/medic.rb)        | Medic is the CLI for interacting with Mediator |
+| [minder](https://github.com/stacklok/mediator)                    | [formula](Formula/minder.rb)        | minder is the CLI for interacting with Minder |
 
 ## Documentation
 
