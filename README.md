@@ -21,7 +21,7 @@ brew install stacklok/tap/<formula>
 
 where `<formula>` is one of the following Homebrew formulas published by Stacklok.
 
-## Formulas
+## Available Formulas
 
 | Repository | Formula | Description |
 | ---------- | ------- | ----------- |
