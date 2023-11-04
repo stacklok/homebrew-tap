@@ -2,7 +2,7 @@
 
 The following repository serves as a placeholder for Stacklok's Homebrew Tap.
 
-Note that most of its content is auto-generated.
+Note that most of this content is auto-generated.
 
 ## Installation
 
