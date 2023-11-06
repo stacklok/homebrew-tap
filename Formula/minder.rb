@@ -5,20 +5,20 @@
 class Minder < Formula
   desc "minder is the client CLI for interacting with Minder by Stacklok."
   homepage "https://github.com/stacklok/minder"
-  version "0.0.12"
+  version "0.0.13"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/stacklok/minder/releases/download/v0.0.12/minder_0.0.12_darwin_arm64.tar.gz"
-      sha256 "e82aceb237df8085ce4a539b776bc1534d598ac6ec005e5b0849c8bcb02c4cd7"
+      url "https://github.com/stacklok/minder/releases/download/v0.0.13/minder_0.0.13_darwin_arm64.tar.gz"
+      sha256 "2240ea7ec9a1003f5ea21131718796e08e232b1c4ba58dcda048fd2992a49bb2"
 
       def install
         bin.install "minder"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/stacklok/minder/releases/download/v0.0.12/minder_0.0.12_darwin_amd64.tar.gz"
-      sha256 "7ef2926ef86834744665e221f2eec060b090e0603418aba241df02cf723b7fe2"
+      url "https://github.com/stacklok/minder/releases/download/v0.0.13/minder_0.0.13_darwin_amd64.tar.gz"
+      sha256 "faacf926df7c8b50429217f62eb3305bcc9db997216699920363deb261333864"
 
       def install
         bin.install "minder"
@@ -27,17 +27,17 @@ class Minder < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/stacklok/minder/releases/download/v0.0.12/minder_0.0.12_linux_arm64.tar.gz"
-      sha256 "fdfa479f0853461c2110db23224f058be51da8c127375b0c3375adcdb3cfcea6"
+    if Hardware::CPU.intel?
+      url "https://github.com/stacklok/minder/releases/download/v0.0.13/minder_0.0.13_linux_amd64.tar.gz"
+      sha256 "3b11712effd41df05b49076f7b5a607719ba3aefaf03a035d861c3da58bb6808"
 
       def install
         bin.install "minder"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/stacklok/minder/releases/download/v0.0.12/minder_0.0.12_linux_amd64.tar.gz"
-      sha256 "084e88b2a136b3918cd27ea406f0f4a7b5c68fbf32aba3f28f4ceb1eaf3398ec"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/stacklok/minder/releases/download/v0.0.13/minder_0.0.13_linux_arm64.tar.gz"
+      sha256 "0163deec72f0e5bb1c499451ec650127230b730b48d19ec0659c9506f7640dee"
 
       def install
         bin.install "minder"
