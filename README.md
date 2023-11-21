@@ -25,7 +25,8 @@ where `<formula>` is one of the following Homebrew formulas published by Stacklo
 
 | Repository | Formula | Description |
 | ---------- | ------- | ----------- |
-| [minder](https://github.com/stacklok/mediator)                    | [formula](Formula/minder.rb)        | minder is the CLI for interacting with Minder |
+| [minder](https://github.com/stacklok/mediator) | [minder.rb](Formula/minder.rb) | minder is the CLI for interacting with Minder |
+| [frizbee](https://github.com/stacklok/frizbee) | [frizbee.rb](Formula/frizbee.rb) | frizbee is a tool you may throw a tag at and it comes back with a checksum |
 
 ## Documentation
 
