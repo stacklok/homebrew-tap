@@ -5,20 +5,20 @@
 class Frizbee < Formula
   desc "frizbee is a tool you may throw a tag at and it comes back with a checksum."
   homepage "https://github.com/stacklok/frizbee"
-  version "0.0.2"
+  version "0.0.3"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/stacklok/frizbee/releases/download/v0.0.2/frizbee_0.0.2_darwin_arm64.tar.gz"
-      sha256 "fe66c544cac1f66a322f704d3286b18e320b3fe0596bd1e88a584a07c2f65d92"
+      url "https://github.com/stacklok/frizbee/releases/download/v0.0.3/frizbee_0.0.3_darwin_arm64.tar.gz"
+      sha256 "75ada96129fc65c83094810195bd1cd4074bc1e679380ab15f8a9ec2f2cbce15"
 
       def install
         bin.install "frizbee"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/stacklok/frizbee/releases/download/v0.0.2/frizbee_0.0.2_darwin_amd64.tar.gz"
-      sha256 "bd955747898877f556e34b8efe0326eace06d2f820b2651bdb4a2ab1457b9a54"
+      url "https://github.com/stacklok/frizbee/releases/download/v0.0.3/frizbee_0.0.3_darwin_amd64.tar.gz"
+      sha256 "3e5198363a619ec2304c6c14161277d76af7d493be98844cc1c3f8bdad602414"
 
       def install
         bin.install "frizbee"
@@ -28,16 +28,16 @@ class Frizbee < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/stacklok/frizbee/releases/download/v0.0.2/frizbee_0.0.2_linux_arm64.tar.gz"
-      sha256 "1aaaa2449ea67eeaaac30ba747fce948655e61517a90d62560907d2ea15bd21e"
+      url "https://github.com/stacklok/frizbee/releases/download/v0.0.3/frizbee_0.0.3_linux_arm64.tar.gz"
+      sha256 "e3e996bb4263eb44b0b5220d3d5a973b86398b677bddff8edf61bb8e706d5dca"
 
       def install
         bin.install "frizbee"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/stacklok/frizbee/releases/download/v0.0.2/frizbee_0.0.2_linux_amd64.tar.gz"
-      sha256 "b4bce6f91db89e7844c8cd116a5dc656765c752bef96a8425102ac7080a6f8b1"
+      url "https://github.com/stacklok/frizbee/releases/download/v0.0.3/frizbee_0.0.3_linux_amd64.tar.gz"
+      sha256 "8a35789a75f10d7ff373d1bbc57a92ae15f5bd6516e7c40de0649c3a1c96b2df"
 
       def install
         bin.install "frizbee"
