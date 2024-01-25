@@ -5,20 +5,20 @@
 class Minder < Formula
   desc "minder is the client CLI for interacting with Minder by Stacklok."
   homepage "https://github.com/stacklok/minder"
-  version "0.0.26"
+  version "0.0.27"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/stacklok/minder/releases/download/v0.0.26/minder_0.0.26_darwin_amd64.tar.gz"
-      sha256 "4291c675a1bace2ba7f5d16814590657c9860118753318d2a2ba0054b7314e67"
+      url "https://github.com/stacklok/minder/releases/download/v0.0.27/minder_0.0.27_darwin_amd64.tar.gz"
+      sha256 "0fda040495d5a5fec494f02bce485e4ac0e25d5d4085fff53f01a48bf88f0919"
 
       def install
         bin.install "minder"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/stacklok/minder/releases/download/v0.0.26/minder_0.0.26_darwin_arm64.tar.gz"
-      sha256 "c81ec211441ff62309ea9a7039045f0f4dcc4a74b1e9609965207d781f305ce7"
+      url "https://github.com/stacklok/minder/releases/download/v0.0.27/minder_0.0.27_darwin_arm64.tar.gz"
+      sha256 "3902c538a32f0162ed1d0fb27359cd348f7966803b0159ad9c1d1cfaa8b37268"
 
       def install
         bin.install "minder"
@@ -28,16 +28,16 @@ class Minder < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/stacklok/minder/releases/download/v0.0.26/minder_0.0.26_linux_arm64.tar.gz"
-      sha256 "2b4a789869c9be21955c9789d5cf6144dca315bbe51359dec26395638e434123"
+      url "https://github.com/stacklok/minder/releases/download/v0.0.27/minder_0.0.27_linux_arm64.tar.gz"
+      sha256 "daeeed11aaf5d1a0a7f6dd63ebcf0968fb15615eee418be79e5daf1dea905e7f"
 
       def install
         bin.install "minder"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/stacklok/minder/releases/download/v0.0.26/minder_0.0.26_linux_amd64.tar.gz"
-      sha256 "1c2a5c4bdb8b1c6912fac2254ffcf249d053107456f8613c9e58d03a35cc5dd7"
+      url "https://github.com/stacklok/minder/releases/download/v0.0.27/minder_0.0.27_linux_amd64.tar.gz"
+      sha256 "3516e21a7e9e6505bde8ff257c87a8753aab97ab24b13ee306c12a59e6b29ff6"
 
       def install
         bin.install "minder"
