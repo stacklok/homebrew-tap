@@ -5,20 +5,20 @@
 class Minder < Formula
   desc "minder is the client CLI for interacting with Minder by Stacklok."
   homepage "https://github.com/stacklok/minder"
-  version "0.0.37"
+  version "0.0.38"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/stacklok/minder/releases/download/v0.0.37/minder_0.0.37_darwin_arm64.tar.gz"
-      sha256 "4dbf93843511e2cab44774c70c961b68091645fd90558d9d167aa0de763900aa"
+    if Hardware::CPU.intel?
+      url "https://github.com/stacklok/minder/releases/download/v0.0.38/minder_0.0.38_darwin_amd64.tar.gz"
+      sha256 "8f9ad5da70ce405f7072018ea64c3667d5fb96bbd2e1f3c21a7dbfa82dbe20bf"
 
       def install
         bin.install "minder"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/stacklok/minder/releases/download/v0.0.37/minder_0.0.37_darwin_amd64.tar.gz"
-      sha256 "839767e583ddec1d6d3c9c879d571757a915484dee02246504b3211cae89539e"
+    if Hardware::CPU.arm?
+      url "https://github.com/stacklok/minder/releases/download/v0.0.38/minder_0.0.38_darwin_arm64.tar.gz"
+      sha256 "70af0b3aefde92ea63f7edb7ee1a4a71a08e5a359774df7c6c7304bc5adebbf3"
 
       def install
         bin.install "minder"
@@ -28,16 +28,16 @@ class Minder < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/stacklok/minder/releases/download/v0.0.37/minder_0.0.37_linux_arm64.tar.gz"
-      sha256 "521cc16069c681777116d036b1814ba84cd9a21656a2c141f335e087e7cc2b5c"
+      url "https://github.com/stacklok/minder/releases/download/v0.0.38/minder_0.0.38_linux_arm64.tar.gz"
+      sha256 "abe88461476cad9f89212e39ff1185290050addaee077d5187de36e8d69de472"
 
       def install
         bin.install "minder"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/stacklok/minder/releases/download/v0.0.37/minder_0.0.37_linux_amd64.tar.gz"
-      sha256 "c7c5b1415a1e2dac8df2be0e8237e4d6aaf8e7fcb901389a5e82df39296c38c6"
+      url "https://github.com/stacklok/minder/releases/download/v0.0.38/minder_0.0.38_linux_amd64.tar.gz"
+      sha256 "b554e49a0232d8c5f0a3b8a8ed9824f671a25ec983b439cbdc7e023225d97db9"
 
       def install
         bin.install "minder"
