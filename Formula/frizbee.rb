@@ -10,7 +10,7 @@ class Frizbee < Formula
   on_macos do
     on_intel do
       url "https://github.com/stacklok/frizbee/releases/download/v0.0.17/frizbee_0.0.17_darwin_amd64.tar.gz"
-      sha256 "8cdf3ac6f2b7b82dcdeb593b196b78aff3dea0bad39439a59a4d54ce318d2869"
+      sha256 "98145978ed53a8094cfea1d23ae116c9ba9b3504f5e2fd9e8770e7077612f91f"
 
       def install
         bin.install "frizbee"
@@ -18,7 +18,7 @@ class Frizbee < Formula
     end
     on_arm do
       url "https://github.com/stacklok/frizbee/releases/download/v0.0.17/frizbee_0.0.17_darwin_arm64.tar.gz"
-      sha256 "99733b153444f374c9c517dbc18f9dab5ddc100df746c5da99e78fafdf0c8467"
+      sha256 "f5dee914a844c3ee87461340e1a25965c50ad3f7db0a9ff0fc604f0ce1ebee3d"
 
       def install
         bin.install "frizbee"
@@ -30,7 +30,7 @@ class Frizbee < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/stacklok/frizbee/releases/download/v0.0.17/frizbee_0.0.17_linux_amd64.tar.gz"
-        sha256 "4fd99f8a623cfc644bb9428495b9216d3de9dc9830770ec1aebcdb8f76b4455e"
+        sha256 "4bc16583f089a7d1c9edd2130bf6548a416fefff8a25aa854e6b574e03c5ec2b"
 
         def install
           bin.install "frizbee"
@@ -40,7 +40,7 @@ class Frizbee < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/stacklok/frizbee/releases/download/v0.0.17/frizbee_0.0.17_linux_arm64.tar.gz"
-        sha256 "bcb20ecb8852a36b986da6860d686ed9546fd8ab302f2fd7aa6e4bb9c4ed936c"
+        sha256 "a77bcf1f02076b2f739eda4d6fee2487fd169e5a7eaf39d3214b4444b9bcce77"
 
         def install
           bin.install "frizbee"
