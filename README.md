@@ -1,3 +1,7 @@
+# Deprecation notice:
+
+### This tap repository is going to be deprecated. We have formulas in homebrew-core for both of the projects listed here, so from now these projects will be available only through there.
+
 # homebrew-tap
 
 The following repository serves as a placeholder for Stacklok's Homebrew Tap.
