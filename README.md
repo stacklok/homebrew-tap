@@ -27,10 +27,9 @@ where `<formula>` is one of the following Homebrew formulas published by Stacklo
 
 ## Available Formulas
 
-| Repository | Formula | Description |
-| ---------- | ------- | ----------- |
-| [minder](https://github.com/stacklok/mediator) | [minder.rb](Formula/minder.rb) | minder is the CLI for interacting with Minder |
-| [frizbee](https://github.com/stacklok/frizbee) | [frizbee.rb](Formula/frizbee.rb) | frizbee is a tool you may throw a tag at and it comes back with a checksum |
+| Repository                                       | Formula | Description                                                                                  |
+|--------------------------------------------------| ------- |----------------------------------------------------------------------------------------------|
+| [vibetool](https://github.com/stacklok/vibetool) | [vibetool.rb](Formula/vibetool.rb) | vibetool is a lightweight, secure, and fast manager for MCP (Model Context Protocol) servers |
 
 ## Documentation
 
