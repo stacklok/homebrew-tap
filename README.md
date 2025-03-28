@@ -27,9 +27,9 @@ where `<formula>` is one of the following Homebrew formulas published by Stacklo
 
 ## Available Formulas
 
-| Repository                                       | Formula | Description                                                                                  |
-|--------------------------------------------------| ------- |----------------------------------------------------------------------------------------------|
-| [vibetool](https://github.com/stacklok/vibetool) | [vibetool.rb](Formula/vibetool.rb) | vibetool is a lightweight, secure, and fast manager for MCP (Model Context Protocol) servers |
+| Repository                                       | Formula                | Description                                                                                  |
+|--------------------------------------------------|------------------------|----------------------------------------------------------------------------------------------|
+| [vibetool](https://github.com/stacklok/vibetool) | [vt.rb](Formula/vt.rb) | vibetool is a lightweight, secure, and fast manager for MCP (Model Context Protocol) servers |
 
 ## Documentation
 
