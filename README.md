@@ -1,7 +1,3 @@
-# Deprecation notice:
-
-### This tap repository is going to be deprecated. We have formulas in homebrew-core for both of the projects listed here, so from now these projects will be available only through there.
-
 # homebrew-tap
 
 The following repository serves as a placeholder for Stacklok's Homebrew Tap.
@@ -29,7 +25,7 @@ where `<formula>` is one of the following Homebrew formulas published by Stacklo
 
 | Repository                                       | Formula                | Description                                                                                  |
 |--------------------------------------------------|------------------------|----------------------------------------------------------------------------------------------|
-| [vibetool](https://github.com/stacklok/vibetool) | [vt.rb](Formula/vt.rb) | vibetool is a lightweight, secure, and fast manager for MCP (Model Context Protocol) servers |
+| [toolhive](https://github.com/StacklokLabs/toolhive) | [thv.rb](Formula/thv.rb) | toolhive is a lightweight, secure, and fast manager for MCP (Model Context Protocol) servers |
 
 ## Documentation
 
