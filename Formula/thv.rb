@@ -5,20 +5,20 @@
 class Thv < Formula
   desc "ToolHive (thv) is a lightweight, secure, and fast manager for MCP (Model Context Protocol) servers"
   homepage "https://github.com/StacklokLabs/toolhive"
-  version "0.0.15"
+  version "0.0.16"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/StacklokLabs/toolhive/releases/download/v0.0.15/toolhive_0.0.15_darwin_amd64.tar.gz"
-      sha256 "424131f3409971f10604d27d94488214f580be49209bbd0c60d313e57c476297"
+      url "https://github.com/StacklokLabs/toolhive/releases/download/v0.0.16/toolhive_0.0.16_darwin_amd64.tar.gz"
+      sha256 "a6c07a9e8ad6f1bc6d4d2e16016e8b690db5fa23368566e1649d0d9aa017e944"
 
       def install
         bin.install "thv"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/StacklokLabs/toolhive/releases/download/v0.0.15/toolhive_0.0.15_darwin_arm64.tar.gz"
-      sha256 "1f10986ec797ea0287e07bd86ab8d5d9674654dc1a09f773360dd66ed4d69f5e"
+      url "https://github.com/StacklokLabs/toolhive/releases/download/v0.0.16/toolhive_0.0.16_darwin_arm64.tar.gz"
+      sha256 "a561bea64e4c76345c62b3ab3c9e5f1d2fab33aa83580d10daf2f49f45ee4b9a"
 
       def install
         bin.install "thv"
@@ -29,8 +29,8 @@ class Thv < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/StacklokLabs/toolhive/releases/download/v0.0.15/toolhive_0.0.15_linux_amd64.tar.gz"
-        sha256 "83ffa260325246596a80132e5dfea36fad2b9822ae8a80c818a021f7ccaaa5cc"
+        url "https://github.com/StacklokLabs/toolhive/releases/download/v0.0.16/toolhive_0.0.16_linux_amd64.tar.gz"
+        sha256 "f4323deecde5a7d452a8c830a2080f137c6fd19c747d78dac77f4f30b6174b9d"
 
         def install
           bin.install "thv"
@@ -39,8 +39,8 @@ class Thv < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/StacklokLabs/toolhive/releases/download/v0.0.15/toolhive_0.0.15_linux_arm64.tar.gz"
-        sha256 "7a9ceb4feffc9d290ddd557a8e45f454ce2d74aadd6abe71bb3246277d27cec7"
+        url "https://github.com/StacklokLabs/toolhive/releases/download/v0.0.16/toolhive_0.0.16_linux_arm64.tar.gz"
+        sha256 "d333f9683f54d5fab2baa90401990f6af9d2d3a9e87e532732debf6cb082031e"
 
         def install
           bin.install "thv"
