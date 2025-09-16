@@ -5,20 +5,20 @@
 class Thv < Formula
   desc "ToolHive (thv) is a lightweight, secure, and fast manager for MCP (Model Context Protocol) servers"
   homepage "https://github.com/stacklok/toolhive"
-  version "0.3.0"
+  version "0.3.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/stacklok/toolhive/releases/download/v0.3.0/toolhive_0.3.0_darwin_amd64.tar.gz"
-      sha256 "9794ede20b2e716cf9c0384d6be070b92f8dd361e1397f79ca3a39590bb35b30"
+      url "https://github.com/stacklok/toolhive/releases/download/v0.3.1/toolhive_0.3.1_darwin_amd64.tar.gz"
+      sha256 "fa572c88773ea53a680333c675674cc93e1d11ba7fcea18670170b64097c627e"
 
       def install
         bin.install "thv"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/stacklok/toolhive/releases/download/v0.3.0/toolhive_0.3.0_darwin_arm64.tar.gz"
-      sha256 "7e17a2a440e5dfac14bbf6a998f62938538cc87c22cbc9eb4ea5b03127081fe8"
+      url "https://github.com/stacklok/toolhive/releases/download/v0.3.1/toolhive_0.3.1_darwin_arm64.tar.gz"
+      sha256 "a6d526664eac4a8241151dd5fde49d985b56da47a871509bd5ea59e1583bb562"
 
       def install
         bin.install "thv"
@@ -28,15 +28,15 @@ class Thv < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/stacklok/toolhive/releases/download/v0.3.0/toolhive_0.3.0_linux_amd64.tar.gz"
-      sha256 "ae001983cd0f382188a29de3d446a69ecb3fb22568a1d0fcf69a37f62205126b"
+      url "https://github.com/stacklok/toolhive/releases/download/v0.3.1/toolhive_0.3.1_linux_amd64.tar.gz"
+      sha256 "5e64c0b6eebcfe6984df272edcea07413b23ad1c826fcdd35bf08ce5f44f6502"
       def install
         bin.install "thv"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/stacklok/toolhive/releases/download/v0.3.0/toolhive_0.3.0_linux_arm64.tar.gz"
-      sha256 "2c4c07f9bd3ea0bcde84936861eac3a8f4eeeae04a7236bf361b353be244a28d"
+      url "https://github.com/stacklok/toolhive/releases/download/v0.3.1/toolhive_0.3.1_linux_arm64.tar.gz"
+      sha256 "b3e5ec9c826fde474c65715c36f802f20403d3e4ee3ff9818bdbea02bfc2ec34"
       def install
         bin.install "thv"
       end
