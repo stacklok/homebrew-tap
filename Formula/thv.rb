@@ -10,7 +10,7 @@ class Thv < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/stacklok/toolhive/releases/download/v0.6.8/toolhive_0.6.8_darwin_amd64.tar.gz"
-      sha256 "169d069a8473e90e416b9296678771e64e16621e4a8f166a25f8b87990764e89"
+      sha256 "535e9be23d509fb6214118c690da25b9852313245df8ab57b8caa25c5d13f4d5"
 
       def install
         bin.install "thv"
@@ -18,7 +18,7 @@ class Thv < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/stacklok/toolhive/releases/download/v0.6.8/toolhive_0.6.8_darwin_arm64.tar.gz"
-      sha256 "916e6dc7407955a7020b40b6e6ce127492987d2510e9f3e02a38faf8d991307c"
+      sha256 "d85f0a3b032b493966d40ed947a6f57ad9d20f8cae3ab2fad47cb80d64e599f4"
 
       def install
         bin.install "thv"
@@ -29,14 +29,14 @@ class Thv < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/stacklok/toolhive/releases/download/v0.6.8/toolhive_0.6.8_linux_amd64.tar.gz"
-      sha256 "c627c07ee7bf86624f7afe371ba5784542b1642c92b93251b097fa6f6b0c8aab"
+      sha256 "a79d7a021301636bd24a89aa3078cdb5f841f2150a4976d5f53b000ef91d3bf7"
       def install
         bin.install "thv"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/stacklok/toolhive/releases/download/v0.6.8/toolhive_0.6.8_linux_arm64.tar.gz"
-      sha256 "5c70d01ac07f5696dd9ba7cdbcb6c3af6cd25bbe1a02374858779a3dd1947744"
+      sha256 "eec78a755c295140b417f34692919affb69871c2434125e87981a8ef2da576c0"
       def install
         bin.install "thv"
       end
