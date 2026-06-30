@@ -26,6 +26,7 @@ where `<formula>` is one of the following Homebrew formulas published by Stacklo
 | Repository                                       | Formula                | Description                                                                                  |
 |--------------------------------------------------|------------------------|----------------------------------------------------------------------------------------------|
 | [toolhive](https://github.com/StacklokLabs/toolhive) | [thv.rb](Formula/thv.rb) | toolhive is a lightweight, secure, and fast manager for MCP (Model Context Protocol) servers |
+| [modelith](https://github.com/stacklok/modelith) | [modelith.rb](Formula/modelith.rb) | Tooling for authoring, validating, and rendering domain models |
 
 ## Documentation
 
