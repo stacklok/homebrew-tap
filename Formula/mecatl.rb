@@ -5,13 +5,13 @@
 class Mecatl < Formula
   desc "Agent harness for cloud-native workloads, with server and terminal UI"
   homepage "https://github.com/stacklok/mecatl"
-  version "0.0.36"
+  version "0.0.37"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/stacklok/mecatl/releases/download/v0.0.36/mecatl_0.0.36_darwin_amd64.tar.gz"
-      sha256 "80f4238c4ccbe7f59d045928ff54522b15a3539d083755e75bf1895209501ac8"
+      url "https://github.com/stacklok/mecatl/releases/download/v0.0.37/mecatl_0.0.37_darwin_amd64.tar.gz"
+      sha256 "e216ea696c54274e9610d73e8bf7af86dfb80e07090a186bb8f7a524f7a16774"
 
       define_method(:install) do
         bin.install "mecated"
@@ -19,8 +19,8 @@ class Mecatl < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/stacklok/mecatl/releases/download/v0.0.36/mecatl_0.0.36_darwin_arm64.tar.gz"
-      sha256 "478899899b761d357c3e1737de619a90261e1cd5d7c3eb6ac35970465cd91c79"
+      url "https://github.com/stacklok/mecatl/releases/download/v0.0.37/mecatl_0.0.37_darwin_arm64.tar.gz"
+      sha256 "d184dcf8adfde9f86864d72b6e022b141f241d8dcd3d29af92471b688ab4d35e"
 
       define_method(:install) do
         bin.install "mecated"
@@ -31,16 +31,16 @@ class Mecatl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/stacklok/mecatl/releases/download/v0.0.36/mecatl_0.0.36_linux_amd64.tar.gz"
-      sha256 "e495a39a1c5b55efb6eea9046a62edd1892f5b19028147ad69683aac38abd714"
+      url "https://github.com/stacklok/mecatl/releases/download/v0.0.37/mecatl_0.0.37_linux_amd64.tar.gz"
+      sha256 "6bfa47d4c2d02a15ff0a02822d3f8cc6751b795752be8e1b0be169883d1d0ac7"
       define_method(:install) do
         bin.install "mecated"
         bin.install "mecatui"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/stacklok/mecatl/releases/download/v0.0.36/mecatl_0.0.36_linux_arm64.tar.gz"
-      sha256 "076623cd662297b09deccd2257840250baf670d720ceafdb11807fbfd25a6cde"
+      url "https://github.com/stacklok/mecatl/releases/download/v0.0.37/mecatl_0.0.37_linux_arm64.tar.gz"
+      sha256 "7432f33b7491b036db0f0a366a562b6185c8d7d1d19a184e776583012139d96b"
       define_method(:install) do
         bin.install "mecated"
         bin.install "mecatui"
@@ -49,7 +49,7 @@ class Mecatl < Formula
   end
 
   test do
-    assert_match "mecated v0.0.36", shell_output("#{bin}/mecated --version")
-    assert_match "mecatui v0.0.36", shell_output("#{bin}/mecatui --version")
+    assert_match "mecated v0.0.37", shell_output("#{bin}/mecated --version")
+    assert_match "mecatui v0.0.37", shell_output("#{bin}/mecatui --version")
   end
 end
