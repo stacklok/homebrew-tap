@@ -5,20 +5,20 @@
 class Modelith < Formula
   desc "Tooling for authoring, validating, and rendering domain models"
   homepage "https://github.com/stacklok/modelith"
-  version "0.4.0"
+  version "0.5.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/stacklok/modelith/releases/download/v0.4.0/modelith_0.4.0_darwin_amd64.tar.gz"
-      sha256 "1db723c42ae83be1ba56fc4861ce56d519a84f57b402b454de70d70f8c608700"
+      url "https://github.com/stacklok/modelith/releases/download/v0.5.0/modelith_0.5.0_darwin_amd64.tar.gz"
+      sha256 "c6ff089ca567ff98481d4f01c8f01e8f278e60f33a769e28518ba5031b4797ec"
 
       define_method(:install) do
         bin.install "modelith"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/stacklok/modelith/releases/download/v0.4.0/modelith_0.4.0_darwin_arm64.tar.gz"
-      sha256 "a1a27c06256b6fba634ddf8a2be08804376c87bdeea560aeb918e26bf1e35e71"
+      url "https://github.com/stacklok/modelith/releases/download/v0.5.0/modelith_0.5.0_darwin_arm64.tar.gz"
+      sha256 "7f0644f5ec2f98c37f4a3fced4b1ee149298053f75be28993b042dd969e87bc6"
 
       define_method(:install) do
         bin.install "modelith"
@@ -28,15 +28,15 @@ class Modelith < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/stacklok/modelith/releases/download/v0.4.0/modelith_0.4.0_linux_amd64.tar.gz"
-      sha256 "f86692a48e71651c2aa05772d1add67546a56fe9522263f4283f0b5398a888ec"
+      url "https://github.com/stacklok/modelith/releases/download/v0.5.0/modelith_0.5.0_linux_amd64.tar.gz"
+      sha256 "df779ee7092d588c1103649c3f274b65da6da212a06a69b823a917e2efce37af"
       define_method(:install) do
         bin.install "modelith"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/stacklok/modelith/releases/download/v0.4.0/modelith_0.4.0_linux_arm64.tar.gz"
-      sha256 "718912a277fa104755d64e8813993b44147f8901cc0f4508aab6570c6e7d2759"
+      url "https://github.com/stacklok/modelith/releases/download/v0.5.0/modelith_0.5.0_linux_arm64.tar.gz"
+      sha256 "3e116ed400f068efcaf0abf73a881b867e9fba0b065618c313659ca7ea77349d"
       define_method(:install) do
         bin.install "modelith"
       end
