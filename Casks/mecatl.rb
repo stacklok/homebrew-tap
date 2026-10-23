@@ -7,25 +7,25 @@ cask "mecatl" do
     end
   end
 
-  version "0.0.49"
+  version "0.0.50"
 
   on_macos do
     on_arm do
-      sha256 "e7eaa671741e548ec8fb6b06293c0a5ace3abc882ecf86f4efe037bfa2be7829"
+      sha256 "8bf96e55f026ed04847a80883e73529e4639a03ab8e54fa91295f15b9522bc30"
       url "https://github.com/stacklok/mecatl/releases/download/v#{version}/mecatl_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "1df0693c39c5e3653884fc0b8396898cee12f4fa64cd4076f9cbd72adadea934"
+      sha256 "abf0c41c3739a1c858ff7af3961a992b92593ff4bc075ada66d0d52c1fe00fd1"
       url "https://github.com/stacklok/mecatl/releases/download/v#{version}/mecatl_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "e502208c4d3a27a69d3d284206cacf409b3177ecb1a6afebe75a72c75ab796a1"
+      sha256 "6377c1eadd165562d3383b40b5548799ca04944fe8dc1e2709d8c663f86ca33b"
       url "https://github.com/stacklok/mecatl/releases/download/v#{version}/mecatl_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "cf3fd9b1cfeafb6798ae51f477902a75f395713ee516d0782c6237dbd577b4ae"
+      sha256 "d4571503c5a0d6e35aec928cb0ebe0ecb5e91aa7c14d1682d2ccfa16fc3c1247"
       url "https://github.com/stacklok/mecatl/releases/download/v#{version}/mecatl_#{version}_linux_amd64.tar.gz"
     end
   end
