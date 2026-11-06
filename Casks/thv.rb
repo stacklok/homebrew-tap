@@ -6,25 +6,25 @@ cask "thv" do
     end
   end
 
-  version "0.62.0"
+  version "0.63.0"
 
   on_macos do
     on_arm do
-      sha256 "dcf18ae646a39c9480184f705c5a52d99df0922131fbb67f4a58dff228cb3cc4"
+      sha256 "837e03adfd735c0f248cf35764211d64d814a0889f6e587628c1287517ad334d"
       url "https://github.com/stacklok/toolhive/releases/download/v#{version}/toolhive_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "156384d7b9c2f7ddea114d771936a04ef8444123ca70bf8b0a148475025e4e1f"
+      sha256 "e6da2c83d21da61034537a849576e07ba48244633d942a8c3adbd881413439bc"
       url "https://github.com/stacklok/toolhive/releases/download/v#{version}/toolhive_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "ab3c20cb434fbc52d86fb1ada58d61d0b3a1a5204e8c3b7cff14a37ca0005f39"
+      sha256 "41c57adffc9d0949b9bc125b0650efb83d22be0eef64506971254dd43d3d1fce"
       url "https://github.com/stacklok/toolhive/releases/download/v#{version}/toolhive_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "ada3b4eed3e8d183ccdd2b5463acb4092ecc87be26c5d2e3621b64dea426100f"
+      sha256 "41a24a791f075c4d27b16ea15329c56bf9d5c55baf2c398ad7ea49cf3ea7578f"
       url "https://github.com/stacklok/toolhive/releases/download/v#{version}/toolhive_#{version}_linux_amd64.tar.gz"
     end
   end
@@ -39,5 +39,5 @@ cask "thv" do
 
   binary "thv"
 
-  # No zap stanza required
+  zap :not_required
 end
